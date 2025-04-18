@@ -1,5 +1,5 @@
 {
-    "name": "GHOSTBOT",
+    "name": "SIABOT",
     "version": "2.0.7",
     "description": "Simple WhatsApp Bot Multi Device",
     "main": "index.js",
@@ -23,7 +23,7 @@
         "name": "Kill"
     },
     "collaborators": {
-        "col1": "GHOSTBOT",
+        "col1": "SIABOT",
         "col2": "@Alexn"
     },
     "repository": {

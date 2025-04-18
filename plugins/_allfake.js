@@ -34,17 +34,17 @@ handler.all = async function (m) {
     let pushname = m.pushName || 'Sin nombre'
 
     //creador y otros
-    global.creador = 'Wa.me/56959978797'
+    global.creador = 'Wa.me/56971943258'
     global.ofcbot = `${conn.user.jid.split('@')[0]}`
-    global.asistencia = 'https://wa.me/56959978797'
-    global.namechannel = 'GHOSTBOT'
+    global.asistencia = 'https://wa.me/56971943258'
+    global.namechannel = 'SIABOT'
 
     //Reacciones De Comandos.!
     global.rwait = '🕒'
     global.done = '✅'
     global.error = '✖️'
 
-    //Emojis determinado de GHOSTBOT
+    //Emojis determinado de SIABOT
     global.emoji = '🍁'
     global.emoji2 = '⭐'
     global.emoji3 = '✨️'
@@ -60,7 +60,7 @@ handler.all = async function (m) {
     //Enlaces
     var canal = 'https://whatsapp.com/channel/0029VaZ90V9EKyZGyqHKt61M'
     var tiktok = 'https://www.tiktok.com/savagehax'
-    var ig = 'https://www.instagram.com/alexnsnk7'
+    var ig = 'https://www.instagram.com/usd.valuu_'
     let correo = 'tummperra@gmail.com'
 
     global.redes = [canal, tiktok, ig, correo].getRandom()
@@ -86,9 +86,9 @@ handler.all = async function (m) {
     global.readMore = more.repeat(850)
 
     //Fakes
-    global.fkontak = { key: { participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `56959978797-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': null, thumbnail: null, sendEphemeral: true } } }
+    global.fkontak = { key: { participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `56971943258-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': null, thumbnail: null, sendEphemeral: true } } }
 
-    // global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "56959978797-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${packname}`, orderTitle: 'Bang', thumbnail: icons, sellerJid: '0@s.whatsapp.net'}}}
+    // global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "56971943258-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: `${packname}`, orderTitle: 'Bang', thumbnail: icons, sellerJid: '0@s.whatsapp.net'}}}
 
     global.fake = {
         contextInfo: {
@@ -97,9 +97,9 @@ handler.all = async function (m) {
     }, { quoted: m }
 
     global.icono = [
-        'https://ibb.co/bg201P59',
-        'https://ibb.co/bg201P59',
-        'https://ibb.co/bg201P59'
+        'https://ibb.co/3yJNbqZ5',
+        'https://ibb.co/3yJNbqZ5',
+        'https://ibb.co/3yJNbqZ5'
     ].getRandom()
 
 }

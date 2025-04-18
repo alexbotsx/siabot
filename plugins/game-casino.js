@@ -25,18 +25,18 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
 
     count = count ? /all/i.test(count) ? Math.floor(global.db.data.users[m.sender].limit / buatall) : parseInt(count) : args[0] ? parseInt(args[0]) : 1
     count = Math.max(1, count)
-    if (args.length < 1) return conn.reply(m.chat, '🍭 Ingresa la cantidad de ' + `*🍬 Dulces*` + ' que deseas aportar contra' + ` GHOSTBOT` + `\n\n` + '`Ejemplo:`\n' + `> *${usedPrefix + command}* 100`, m)
+    if (args.length < 1) return conn.reply(m.chat, '🍭 Ingresa la cantidad de ' + `*🍬 Dulces*` + ' que deseas aportar contra' + ` SIABOT` + `\n\n` + '`Ejemplo:`\n' + `> *${usedPrefix + command}* 100`, m)
 
     if (user.limit >= count * 1) {
         user.limit -= count * 1
         if (Aku > Kamu) {
-            conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n' + `➠ *GHOSTBOT* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *PERDISTE* ${formatNumber(count)} 🍬 Dulces.`.trim(), m)
+            conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n' + `➠ *SIABOT* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *PERDISTE* ${formatNumber(count)} 🍬 Dulces.`.trim(), m)
         } else if (Aku < Kamu) {
             user.limit += count * 2
-            conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n' + `➠ *GHOSTBOT* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *GANASTE* ${formatNumber(count * 2)} 🍬 Dulces.`.trim(), m)
+            conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n' + `➠ *SIABOT* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username}, *GANASTE* ${formatNumber(count * 2)} 🍬 Dulces.`.trim(), m)
         } else {
             user.limit += count * 1
-            conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n' + `➠ *GHOSTBOT* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username} obtienes ${formatNumber(count * 1)} 🍬 Dulces.`.trim(), m)
+            conn.reply(m.chat, '`🍟 Veamos que numeros tienen!`\n\n' + `➠ *SIABOT* : ${Aku}\n➠ *${username}* : ${Kamu}\n\n> ${username} obtienes ${formatNumber(count * 1)} 🍬 Dulces.`.trim(), m)
         }
     } else conn.reply(m.chat, `No tienes *${formatNumber(count)} 🍬 dulces* para apostar!`.trim(), m)
 
