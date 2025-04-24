@@ -1,38 +1,27 @@
 let handler = async (m, { isPrems, conn }) => {
-	let img = 'https://ibb.co/3yJNbqZ5'
+	let img = 'https://i.ibb.co/GvgdxwXX/file.jpg' 
 	let texto = `> 𝙁𝙍𝙀𝙀 𝙁𝙄𝙍𝙀 𝙑𝙀𝙍𝙎𝙐𝙎
-
-★ 𝙍𝙀𝙂𝙇𝘼𝙎 𝙂𝙀𝙉𝙀𝙍𝘼𝙇𝙀𝙎 ★
- 
-🚩 *𝘙𝘦𝘨𝘭𝘢𝘴𝘭𝘪𝘥𝘦𝘳𝘦𝘴.*  
-🏴 *𝘙𝘦𝘨𝘭𝘢𝘴𝘭𝘪𝘥𝘦𝘳𝘦𝘴2.*
-
-▸▸ 𝙇𝙄𝙎𝙏𝘼 𝙑𝙀𝙍𝙎𝙐𝙎 ⚔ ◂◂
-
-𝑺𝑰𝑮𝑵𝑰𝑭𝑰𝑪𝑨𝑫𝑶𝑺: 𝘏𝘏:𝘔𝘔 🏁
-
-*𝘏𝘖𝘙𝘈:𝘔𝘐𝘕𝘜𝘛𝘖𝘚*
-𝘊𝘗 (𝘊𝘖𝘋𝘐𝘎𝘖 𝘋𝘌 𝘗𝘈𝘐𝘚) 𝘗𝘈𝘙𝘈 𝘓𝘈 𝘏𝘖𝘙𝘈 (𝘔𝘟,𝘊𝘖 𝘠 𝘈𝘙
- 
-𝘊𝘙 (𝐂𝐎𝐋𝐎𝐑 𝐃𝐄 𝐑𝐎𝐏𝐀)
-𝘌𝘫𝘦𝘮𝘱𝘭𝘰: .4𝘷𝘴4 26:30 𝘔𝘟
-𝘌𝘫𝘦𝘮𝘱𝘭𝘰: .12𝘷𝘴12 21:50 𝘕𝘌𝘎𝘙𝘖
-
-ᒪIՏTᗩ ᑕOᗰᗩᑎᗪOՏ
-➺.4𝘷𝘴4 𝘏𝘏:𝘔𝘔 𝘊𝘗
-➺.6𝘷𝘴6 𝘏𝘏:𝘔𝘔 𝘊𝘗
-➺.𝘴𝘤𝘳𝘪𝘮 𝘏𝘏:𝘔𝘔 𝘊𝘗
-➺.𝘪𝘯𝘵𝘦𝘳𝘯𝘢4 𝘏𝘏:𝘔𝘔 𝘊𝘗
-➺.12𝘷𝘴12 𝘏𝘏:𝘔𝘔 𝘊𝘙
-➺.16𝘷𝘴16 𝘏𝘏:𝘔𝘔 𝘊𝘙
-➺.20𝘷𝘴20 𝘏𝘏:𝘔𝘔 𝘊𝘙
-➺.24𝘷𝘴24 𝘏𝘏:𝘔𝘔 𝘊𝘙
-➺.𝘊𝘶𝘢𝘥𝘳𝘪𝘭𝘢𝘵𝘦𝘳𝘰 𝘏𝘏:𝘔𝘔 𝘊𝘙 
-`
-
+	
+	★ 𝙍𝙀𝙂𝙇𝘼𝙎 𝙂𝙀𝙉𝙀𝙍𝘼𝙇𝙀𝙎 ★
+	 
+	🚩 *𝘙𝘦𝘨𝘭𝘢𝘴𝘭𝘪𝘥𝘦𝘳𝘦𝘴.*  
+	🏴 *𝘙𝘦𝘨𝘭𝘢𝘴𝘭𝘪𝘥𝘦𝘳𝘦𝘴2.*
+	
+	▸▸ 𝙇𝙄𝙎𝙏𝘼 𝙑𝙀𝙍𝙎𝙐𝙎 ⚔ ◂◂
+	
+	➺.4𝘷𝘴4 
+	➺.6𝘷𝘴6 
+	➺.𝟪𝘷𝘴𝟪
+	➺.𝘴𝘤𝘳𝘪𝘮 
+	➺.𝘪𝘯𝘵𝘦𝘳𝘯𝘢 
+	➺.12𝘷𝘴12
+	➺.16𝘷𝘴16 
+	➺.𝘨𝘶𝘦𝘳𝘳𝘢
+	`
+	
 	const fkontak = {
 		"key": {
-			"participants": "0@s.whatsapp.net",
+		"participants":"0@s.whatsapp.net",
 			"remoteJid": "status@broadcast",
 			"fromMe": false,
 			"id": "Halo"
@@ -46,9 +35,9 @@ let handler = async (m, { isPrems, conn }) => {
 	}
 	await conn.sendFile(m.chat, img, 'img.jpg', texto, fkontak)
 	global.db.data.users[m.sender].lastcofre = new Date * 1
-}
-handler.help = ['menuff']
-handler.tags = ['freefire', 'main']
-handler.command = ['menuff', 'menufreefire']
-export default handler
+	}
+	handler.help = ['menuff']
+	handler.tags = ['freefire' ,'main'] 
+	handler.command = ['menuff', 'menufreefire'] 
+	export default handler
 
